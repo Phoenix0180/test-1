@@ -6,6 +6,10 @@
     <title>NK-Links</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Phoenix0180/Links/refs/heads/main/Myself.jpg" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- ⚡ 1. Busuanzi Script -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,7 +30,7 @@
             flex-direction: row;
             align-items: center;
             max-width: 800px;
-            position: relative; /* Added for footer positioning */
+            position: relative; 
         }
         .image-container {
             flex: 1;
@@ -54,13 +58,13 @@
         }
         .links a:hover {
             text-decoration: underline;
-            transform: translateY(-5px); /* Jumping animation */
+            transform: translateY(-5px); 
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            max-height: 300px; /* Set a maximum height for the image */
+            max-height: 300px; 
         }
         .links a i {
             margin-right: 10px;
@@ -73,28 +77,37 @@
             color: #666;
         }
         .aquila-logo {
-            width: 20px; /* Adjust the width as needed */
+            width: 20px; 
             height: auto;
             vertical-align: middle;
             margin-right: 10px;
         }
-        .footer {
+        .card-footer {
             position: absolute;
             bottom: 10px;
             right: 20px;
             font-size: 14px;
             color: #666;
         }
+
+        /* ⚡ 2. New Style for Screen Bottom Stats */
+        .screen-bottom-stats {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+        .screen-bottom-stats span {
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="image-container">
-            <!-- Add the image here -->
             <img src="https://raw.githubusercontent.com/Phoenix0180/Links/refs/heads/main/Myself.jpg" alt="Description of the image">
-            <!--<div class="description">
-                <p>This is a brief description about the image. You can add more details here.</p>
-            </div>-->
         </div>
         <div class="content-container">
             <h1>Welcome to the Portal</h1>
@@ -109,17 +122,20 @@
                 <a href="https://exammockai.web.app/" target="_blank"><img src="https://exammockai.web.app/static/img/favicon.svg" alt="AquilaLab Logo" class="aquila-logo"> ExamMockAI</a>
             </div>
         </div>
-        <div class="footer">
+        <div class="card-footer">
             Powered by AquilaLab
         </div>
     </div>
+
+    <!-- ⚡ 3. Visitor Count at Bottom of Screen -->
+    <div class="screen-bottom-stats">
+        <span id="busuanzi_container_site_uv" style="display:none;">
+            Visitors: <b id="busuanzi_value_site_uv">...</b>
+        </span>
+        <span id="busuanzi_container_site_pv" style="display:none; border-left: 1px solid #ccc; padding-left: 10px;">
+            Views: <b id="busuanzi_value_site_pv">...</b>
+        </span>
+    </div>
+
 </body>
 </html>
-<!--<a href="https://youtube.com/@aquilalab?si=N6asYOgqj1Syj2RZ" target="_blank">YouTube</a>
-<a href="https://youtube.com/@aquilalab?si=N6asYOgqj1Syj2RZ" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/" target="_blank">Twitter</a>
-            <a href="https://www.reddit.com/" target="_blank">Reddit</a>
-            <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
-            <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-            <a href="https://www.snapchat.com/" target="_blank">Snapchat</a>-->
